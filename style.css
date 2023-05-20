@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@300;400&display=swap');
 
-:root{
+:root {
     --main-color: #8e44ad;
     --black: #222;
     --white: #fff;
-    --light-gray:#777;
+    --light-gray: #777;
     --light-white: #fff9;
-    --dark-bg: rgba(0,0,0.7); 
+    --dark-bg: rgba(0, 0, 0.7);
     --light-bg: #eee;
     --border: 1rem solid var(--black);
-    --box-shadow: 0.5rem 1rem rgba(0,0,0.1);
-    --text-shadow: 0 1.5rem 3rem rgba(0,0,0.3);
+    --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.071);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0.3);
 
 }
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -24,16 +24,117 @@
     text-transform: capitalize;
 }
 
-html{
-   font-size: 62.5%;
-   overflow-x: hidden;
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
     background-color: var(--white);
 }
 
-html::-webkit-scrollbar-thumb{
+html::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
 }
 
+section {
+    padding: 5rem 10%;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--black);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries */
+
+@media (max-width:1200px) {
+    section {
+        padding: 3rem 5%;
+    }
+}
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:768px) {
+    .header .navbar {
+        position: absolute;
+        top: 8%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        border-top: var(--border);
+        padding: 2rem;
+    }
+
+    .header .navbar a {
+        display: block;
+        margin: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+    html {
+        font-size: 50%;
+    }
+}
