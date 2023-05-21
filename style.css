@@ -8,9 +8,10 @@
     --light-white: #fff9;
     --dark-bg: rgba(0, 0, 0.7);
     --light-bg: #eee;
-    --border: 1rem solid var(--black);
+    --border: .1rem solid var(--black);
     --box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.071);
     --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0.3);
+    --footer: #1a191e;
 
 }
 
@@ -39,6 +40,14 @@ html::-webkit-scrollbar-thumb {
 
 section {
     padding: 5rem 10%;
+}
+
+.heading-title{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--black);
 }
 
 .header {
@@ -78,7 +87,7 @@ section {
 }
 
 .footer{
-    background-color: var(--main-color);
+    background-color: var(--footer);
 }
 
 .footer .box-container{
@@ -96,7 +105,7 @@ section {
 .footer .box-container .box a {
     color: var(--light-bg);
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     display: block;
 }
 
@@ -115,10 +124,36 @@ section {
     padding-right: 2rem;
 }
 
+.footer .credit{
+    text-align: center;
+    padding-top: 3rem;
+    margin-top: 3rem;
+    color: var(--white);
+    border-top: .1rem solid var(--light-white);
+    font-size: 2rem;
+}
 
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
+    gap: 1.5em;
+}
 
+.services .box-container .box{
+    padding: 2rem 2rem;
+    text-align: center;
+    background: var(--light-bg);
+}
 
+.services .box-container .box:hover{
+    background: var(--dark-bg);
+    color: var(--white);
+}
 
+.services .box-container .box h3{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
 
 
 
@@ -180,5 +215,9 @@ section {
 @media (max-width:450px) {
     html {
         font-size: 50%;
+    }
+
+    .heading-title{
+        font-size: 3rem;
     }
 }
