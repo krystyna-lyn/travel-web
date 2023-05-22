@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@300;400&display=swap');
 
 :root {
-    --main-color: #8e44ad;
+    --main-color: #eac71c;
     --black: #222;
     --white: #fff;
     --light-gray: #777;
@@ -40,6 +40,19 @@ html::-webkit-scrollbar-thumb {
 
 section {
     padding: 5rem 10%;
+}
+.btn{
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--main-color);
 }
 
 .heading-title{
@@ -84,6 +97,63 @@ section {
     cursor: pointer;
     color: var(--black);
     display: none;
+}
+
+.home{
+    padding: 0;
+}
+
+.home .slide{
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background-size: cover!important;
+    background-position: center;
+    min-height: 60rem;
+}
+.home .slide .content{
+    width: 85rem;
+}
+
+.home .slide .content span{
+    display: block;
+    font-size: 2.2rem;
+    color: var(--light-white);
+    padding-bottom: 1rem;
+}
+
+.home .slide .content h3{
+    font-size: 6vw;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow: var(--text-shadow);
+    padding: 1rem 0;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
+    gap: 1.5em;
+}
+
+.services .box-container .box{
+    padding: 2rem 2rem;
+    text-align: center;
+    background: var(--light-bg);
+}
+
+.services .box-container .box:hover{
+    background: var( --light-white);
+}
+
+.services .box-container .box h3{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+.services .box-container .box img{
+    height: 5rem;
 }
 
 .footer{
@@ -133,27 +203,9 @@ section {
     font-size: 2rem;
 }
 
-.services .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(16rem, 1fr));
-    gap: 1.5em;
-}
 
-.services .box-container .box{
-    padding: 2rem 2rem;
-    text-align: center;
-    background: var(--light-bg);
-}
 
-.services .box-container .box:hover{
-    background: var(--dark-bg);
-    color: var(--white);
-}
 
-.services .box-container .box h3{
-    font-size: 1.7rem;
-    padding-top: 1rem;
-}
 
 
 
@@ -218,6 +270,6 @@ section {
     }
 
     .heading-title{
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 }
