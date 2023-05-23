@@ -48,6 +48,23 @@ section {
     }
 }
 
+.heading {
+    background-size: cover !important;
+    background-position: cover !important;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.heading {
+    font-size: 10rem;
+    text-transform: uppercase;
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+}
+
 .btn {
     display: inline-block;
     background: var(--black);
@@ -325,6 +342,108 @@ section {
     border-top: 0.1rem solid var(--light-white);
     font-size: 2rem;
 }
+
+
+.about-page {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.about-page .content {
+    flex: 1 1 41rem;
+    text-align: center;
+}
+
+.about-page .image {
+    flex: 1 1 41rem;
+}
+
+.about-page .image img {
+    width: 100%;
+}
+
+.about-page .content h3 {
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.about-page .content p {
+    font-size: 1.5rem;
+    color: var(--light-gray);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.about-page .content .icons-container {
+    display: flex;
+    flex: 1 1 16rem;
+    gap: 1rem;
+    justify-content: center
+}
+
+.about-page .content .icons-container .icons {
+    background: var(--light-bg);
+    padding: 2rem;
+
+}
+
+.about-page .content .icons-container .icons i {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: var(--main-color);
+}
+
+.about-page .content .icons-container .icons span {
+    font-size: 1.5rem;
+    color: var(--dark-bg);
+    display: block;
+}
+
+.reviews {
+    background: var(--light-bg);
+}
+
+.reviews .slide {
+    padding: 2rem;
+    border: var(--border);
+    background: var(--white);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    user-select: none;
+}
+
+.reviews .slide .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.reviews .slide p {
+    font-size: 1.5rem;
+    color: var(--black);
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.reviews .slide h3 {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.reviews .slide span {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    display: block;
+}
+
+.reviews .slide img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+
 
 /*media queries */
 
