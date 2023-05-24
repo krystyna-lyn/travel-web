@@ -59,10 +59,12 @@ section {
 }
 
 h1.heading {
-    font-size: 10rem;
+    font-size: 7rem;
     text-transform: uppercase;
     box-shadow: var(--box-shadow);
     color: var(--white);
+    line-height: 1;
+    text-shadow: var(--text-shadow);
 }
 
 .btn {
@@ -181,7 +183,7 @@ h1.heading {
 }
 
 .services .box-container .box:hover {
-    background: var(--light-white);
+    background: var(--main-color);
 }
 
 .services .box-container .box h3 {
@@ -236,9 +238,19 @@ h1.heading {
 }
 
 .packages .box-container .box {
-    border: var(--border);
     box-shadow: var(--box-shadow);
     background: var(--white);
+    display: none;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3){
+    display: inline-block;
+}
+
+.packages .box-container .box:hover .image img {
+    transform: scale(1.1);
 }
 
 .packages .box-container .box .image {
@@ -443,6 +455,7 @@ h1.heading {
     border-radius: 50%;
     margin-top: 2rem;
 }
+
 
 
 /*media queries */

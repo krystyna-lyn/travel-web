@@ -21,7 +21,7 @@ var swiper = new Swiper('.home-slider', {
 
 var swiper = new Swiper('.reviews-slider', {
     loop: true,
-    spaceBetween: 20,
+    spaceBetween: 40,
     autoHeight: true,
     grabCursor: true,
     breakpoints: {
@@ -36,3 +36,20 @@ var swiper = new Swiper('.reviews-slider', {
         },
     },
 });
+
+let loadMoreBtn = document.querySelector('.packages .load-more .btn');
+let currentItem = 3;
+
+loadMoreBtn.onclick = () => {
+    let boxes = [...document.querySelectorAll('.packages .box-container .box')];
+    for (var i = currentItem; i < currentItem + 3; i++) {
+        boxes[i].style.display = 'block';
+        console.log(currentItem)
+    }
+    
+    currentItem += 3;
+    console.log(currentItem)
+    if (currentItem >= boxes.length) {
+        loadMoreBtn.style.display = 'none';
+    }
+}
