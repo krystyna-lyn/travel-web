@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Travel.web</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -21,10 +19,10 @@
         <a href="home.php" class="logo">travel.</a>
 
         <nav class="navbar">
-            <a href="home.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="package.html">Package</a>
-            <a href="book.html">Book</a>
+            <a href="home.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="package.php">Package</a>
+            <a href="book.php">Book</a>
         </nav>
 
         <div id="menu-btn" class="fas fa-bars"></div>
@@ -113,46 +111,46 @@
     <section class="packages">
         <h1 class="heading-title">Our packages</h1>
 
-            <div class="box-container">
+        <div class="box-container">
 
-                <div class="box">
-                    <div class="image">
-                        <img src="img/img1.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Anventure & Tour</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, necessitatibus? Aspernatur
-                            minus quaerat eius error cum?</p>
-                        <a href="book.php" class="btn">book now</a>
-                    </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/img1.jpg" alt="">
                 </div>
-
-                <div class="box">
-                    <div class="image">
-                        <img src="img/img2.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Anventure & Tour</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, necessitatibus? Aspernatur
-                            minus quaerat eius error cum?</p>
-                        <a href="book.php" class="btn">book now</a>
-                    </div>
-
-                </div>
-                <div class="box">
-                    <div class="image">
-                        <img src="img/img3.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Anventure & Tour</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, necessitatibus? Aspernatur
-                            minus quaerat eius error cum?</p>
-                        <a href="book.php" class="btn">book now</a>
-                    </div>
-
+                <div class="content">
+                    <h3>Anventure & Tour</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, necessitatibus? Aspernatur
+                        minus quaerat eius error cum?</p>
+                    <a href="book.php" class="btn">book now</a>
                 </div>
             </div>
-        
+
+            <div class="box">
+                <div class="image">
+                    <img src="img/img2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Anventure & Tour</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, necessitatibus? Aspernatur
+                        minus quaerat eius error cum?</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="img/img3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Anventure & Tour</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius, necessitatibus? Aspernatur
+                        minus quaerat eius error cum?</p>
+                    <a href="book.php" class="btn">book now</a>
+                </div>
+
+            </div>
+        </div>
+
 
         <div class="load-more"><a href="package.php" class="btn">load more</a></div>
     </section>
@@ -164,7 +162,7 @@
             <a href="book.php" class="btn">book now</a>
         </div>
     </section>
-    
+
 
     <section class="footer">
 
